@@ -6,6 +6,35 @@
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(260deg, #6a9eec, #65c0d3);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: white;
+  color: black;
+  padding: 5rem;
+  border-radius: 2rem;
+}
+
+.container .home, .container .notification, .container .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+}
+
+.container .home .home-title, .container .home .notification-title, .container .home .message-title, .container .notification .home-title, .container .notification .notification-title, .container .notification .message-title, .container .message .home-title, .container .message .notification-title, .container .message .message-title {
+  padding-left: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
