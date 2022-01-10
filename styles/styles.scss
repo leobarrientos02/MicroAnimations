@@ -21,11 +21,11 @@ body {
         cursor: pointer;
         overflow: visible;
     }
-    .home,.notification,.message{
+    .home,.notification,.messages{
         display: flex;
         padding: 2rem;
 
-        .home-title,.notification-title,.message-title{
+        .home-title,.notification-title,.messages-title{
             padding-left: 2rem; 
         }
     }

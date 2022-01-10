@@ -9,8 +9,11 @@ const tl = gsap.timeline({
 const home = document.querySelector(".home");
 // NOTIFICATION
 const notification = document.querySelector(".notification");
+// MESSAGES
+const messages = document.querySelector(".messages");
 
-gsap.set(".feather", { scale: 0, transfromOrgin: "center" });
+// SETTING THE TRANSFORMORGIN
+gsap.set(".feather", { scale: 0, transformOrigin: "center" });
 
 home.addEventListener("click", () => {
   gsap.fromTo(
@@ -51,15 +54,15 @@ home.addEventListener("click", () => {
 
 // NOTIFICATION
 gsap.set(".bell", {
-  transfromOrgin: "top center",
+  transformOrigin: "top center",
 });
 // SETTING THE TRANSFORMORGIN
 gsap.set(".ringer", {
-  transfromOrgin: "top center",
+  transformOrigin: "top center",
 });
 gsap.set(".wave", {
   opacity: 0,
-  transfromOrgin: "bottom",
+  transformOrigin: "bottom",
 });
 
 notification.addEventListener("click", () => {
@@ -98,5 +101,64 @@ notification.addEventListener("click", () => {
       opacity: 0,
       duration: 1.2,
     }
+  );
+});
+
+// MESSAGES
+gsap.set(".flap", {
+  transformOrigin: "top",
+});
+messages.addEventListener("click", () => {
+  tl.fromTo(
+    ".messages-svg",
+    {
+      scale: 1,
+    },
+    {
+      scale: 0.9,
+    }
+  );
+
+  tl.fromTo(
+    ".flap",
+    {
+      scale: 1,
+    },
+    {
+      scale: -1,
+    },
+    "<50%"
+  );
+
+  tl.fromTo(
+    ".messages-svg",
+    {
+      scale: 0.9,
+    },
+    {
+      scale: 1,
+    },
+    "<50%"
+  );
+
+  tl.fromTo(
+    ".note",
+    {
+      y: 0,
+      opacity: 1,
+    },
+    {
+      y: -40,
+      opacity: 0,
+      duration: 0.75,
+    }
+  );
+
+  tl.to(
+    ".flap",
+    {
+      scale: 1,
+    },
+    "<50%"
   );
 });

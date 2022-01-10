@@ -32,14 +32,14 @@ body {
   overflow: visible;
 }
 
-.container .home, .container .notification, .container .message {
+.container .home, .container .notification, .container .messages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2rem;
 }
 
-.container .home .home-title, .container .home .notification-title, .container .home .message-title, .container .notification .home-title, .container .notification .notification-title, .container .notification .message-title, .container .message .home-title, .container .message .notification-title, .container .message .message-title {
+.container .home .home-title, .container .home .notification-title, .container .home .messages-title, .container .notification .home-title, .container .notification .notification-title, .container .notification .messages-title, .container .messages .home-title, .container .messages .notification-title, .container .messages .messages-title {
   padding-left: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
