@@ -27,8 +27,9 @@ body {
   border-radius: 2rem;
 }
 
-.container .home-svg {
+.container .home-svg, .container .notification-svg, .container .messages-svg {
   cursor: pointer;
+  overflow: visible;
 }
 
 .container .home, .container .notification, .container .message {

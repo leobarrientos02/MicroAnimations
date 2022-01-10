@@ -17,8 +17,9 @@ body {
     color: black;
     padding: 5rem;
     border-radius: 2rem;
-    .home-svg{
+    .home-svg,.notification-svg,.messages-svg{
         cursor: pointer;
+        overflow: visible;
     }
     .home,.notification,.message{
         display: flex;
