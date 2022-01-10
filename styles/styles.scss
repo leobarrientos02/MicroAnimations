@@ -17,7 +17,9 @@ body {
     color: black;
     padding: 5rem;
     border-radius: 2rem;
-
+    .home-svg{
+        cursor: pointer;
+    }
     .home,.notification,.message{
         display: flex;
         padding: 2rem;

@@ -27,6 +27,10 @@ body {
   border-radius: 2rem;
 }
 
+.container .home-svg {
+  cursor: pointer;
+}
+
 .container .home, .container .notification, .container .message {
   display: -webkit-box;
   display: -ms-flexbox;
